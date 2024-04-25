@@ -7,18 +7,26 @@ var greeting;
 
 //what we know
 
-currentHour =  5 ;
+currentHour = 5 ;
 
-if (currentHour <= 9) {
+//calculations
+
+if (currentHour < 0) {
+    greeting = "ERROR INVALID HOUR OF " + currentHour;
+}
+
+else if (currentHour < 10) {
     greeting = "Good morning!" ;
 }
  
-else if (currentHour <= 10) {
+else if (currentHour < 17) {
     greeting = "Good day!" ;
 }
 
-else if (currentHour >= 16) {
+else if (currentHour <= 23) {
     greeting = "Good evening!" ;
 }
+
+//results 
 
 console.log(greeting);

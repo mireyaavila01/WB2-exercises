@@ -14,7 +14,7 @@ var grossPay;
 payRate = 17.30 ;
 hoursWorked = 45 ;
 
-// the if statements 
+// calculations 
 
 if (hoursWorked <= 40){
     grossPay = payRate * hoursWorked ;
