@@ -18,10 +18,9 @@ hoursWorked = 45 ;
 annualGrossPay = weeklyGrossPay * 52 ;
 filingStatus = "single";
 weeklyGrossPay = 450 ;
-taxWithholding = taxRatePercent * 450; 
-netPay =  450 - taxWithholding; 
 
 
+/*
 // the if statements 
 
 if ( annualGrossPay < 12000 && filingStatus == "single" ) {
@@ -80,9 +79,9 @@ var message = ("You worked " + hoursWorked + " hours this period. ") +
 (" Your tax withholdings this period is " + taxWithholding) + 
 (" Your net pay is " + netPay) ;
 
-console.log(message);
+console.log(message); */
 
-/*
+
 if(filingStatus == "single"){
     if (annualGrossPay < 1200) {taxRatePercent = .05 ;}
     else if (annualGrossPay < 25000) {taxRatePercent = .10 ;}
@@ -97,14 +96,22 @@ else if(filingStatus == "joint"){
     else if (annualGrossPay > 75000) {taxRatePercent = .20 ;}
 }
 
+taxWithholding = taxRatePercent * weeklyGrossPay; 
+netPay =  weeklyGrossPay - taxWithholding ;
 
 
+console.log(annualGrossPay); 
+console.log(taxRatePercent);
+console.log(netPay);
+
+
+/*
 var message = ("You worked " + hoursWorked + " hours this period. ") +
 ("Because you earn " + payRate + " per hour, your weekly gross pay is " + weeklyGrossPay) +
 (" Your filing status is " + filingStatus) + 
-(" Your tax rate percent is " + taxRatePercent) ; 
+(" Your tax rate percent is " + taxRatePercent) ; */
 
 
-console.log(message); */
+
 
 

@@ -21,7 +21,7 @@ if (hoursWorked <= 40){
 
 }
 
-if (hoursWorked > 40 ) {
+else if (hoursWorked > 40 ) {
     overTimeHours = (hoursWorked - 40 ); 
     overTimePay = ((payRate * 1.5) * overTimeHours) ; 
     regularPay = payRate * 40;

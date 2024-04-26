@@ -13,22 +13,39 @@ var max;
 a = 2 ;
 b = 4 ;
 c = 6 ;
-min = 2 ;
-max = 6 ;
+
 
 //calcualtions
 
-if ( a<b && a<c) {
-   min = a ;
+//test for a
+if ( a > b && a > c){
+   max = "The value of " + a + " in the variable A is the biggest!";
+}
+//test for b
+else if ( b > a && b > c){
+   max = "The value of " + b + " in the variable B is the biggest!";
+}
+//test for c
+else if ( c > a && c > b){
+   max = "The value of " + c + " in the variable C is the biggest!";
 }
 
-else if (c>a && c>b) {
-   max = c ;
+//test for a
+if ( a < b && a < c){
+   min = "The value of " + a + " in the variable A is the smallest!";
 }
+//test for b
+else if ( b < a && b < c){
+   min = "The value of " + b + " in the variable B is the smallest!";
+}
+//test for c
+else if ( c < a && c < b){
+   min = "The value of " + c + " in the variable C is the smallest!";
+}
+
 
 //the results 
 
- var message = ("the min is " + min) + (" and max is " + max);
-
-console.log(message);
+console.log(min);
+console.log(max);
 
